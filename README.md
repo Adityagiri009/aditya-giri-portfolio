@@ -1,16 +1,110 @@
-# React + Vite
+# 🚀 Aditya Giri Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using React.js, Vite, Framer Motion, and EmailJS. This portfolio showcases my projects, technical skills, education, and contact information.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://aditya-giri-portfolio.vercel.app/
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Add a screenshot of your portfolio here.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern Responsive UI
+- Smooth Scrolling Navigation
+- Animated Hero Section
+- Skills Section
+- Projects Showcase
+- Education Timeline
+- Contact Form with EmailJS
+- Resume Download
+- Social Media Links
+- Scroll To Top Button
+
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Framer Motion
+- React Icons
+- EmailJS
+
+## 📂 Project Structure
+
+```text
+src/
+│── assets/
+│── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── About/
+│   ├── Skills/
+│   ├── Projects/
+│   ├── Education/
+│   ├── Contact/
+│   ├── Footer/
+│   └── ScrollToTop/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Adityagiri009/YOUR-REPOSITORY-NAME.git
+```
+
+Go to the project folder:
+
+```bash
+cd YOUR-REPOSITORY-NAME
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 📬 Contact
+
+**Aditya Giri**
+
+📧 Email: giri009aditya@gmail.com
+
+📱 Phone: +91 8858469485
+
+💼 LinkedIn:
+https://www.linkedin.com/in/aditya-giri-641473291/
+
+💻 GitHub:
+https://github.com/Adityagiri009
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
