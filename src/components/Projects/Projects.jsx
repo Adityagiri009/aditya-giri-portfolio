@@ -27,7 +27,7 @@ function Projects() {
       ],
 
       live:
-        "https://aditya-portfolio-steel.vercel.app/",
+        "https://aditya-giri-portfolio.vercel.app/",
 
       github:
         "YOUR_PORTFOLIO_GITHUB_LINK",
