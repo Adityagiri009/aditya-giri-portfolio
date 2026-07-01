@@ -1,0 +1,114 @@
+/* Fade Up */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(60px);
+    animation:fadeUp .8s forwards;
+}
+
+@keyframes fadeUp{
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Fade Left */
+
+.fade-left{
+
+    opacity:0;
+    transform:translateX(-60px);
+    animation:fadeLeft .8s forwards;
+
+}
+
+@keyframes fadeLeft{
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Fade Right */
+
+.fade-right{
+
+    opacity:0;
+    transform:translateX(60px);
+    animation:fadeRight .8s forwards;
+
+}
+
+@keyframes fadeRight{
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Floating */
+
+.float{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* Glow */
+
+.glow{
+
+    animation:glow 3s ease infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:0 0 15px rgba(139,92,246,.4);
+
+    }
+
+    to{
+
+        box-shadow:0 0 40px rgba(6,182,212,.6);
+
+    }
+
+}

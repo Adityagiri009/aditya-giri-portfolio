@@ -1,0 +1,248 @@
+@import "./styles/variables.css";
+@import "./styles/global.css";
+@import "./styles/animations.css";
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+    position:relative;
+    background:var(--bg);
+}
+
+/* ========================= */
+/* ROOT */
+/* ========================= */
+
+#root{
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ========================= */
+/* PURPLE AURORA */
+/* ========================= */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:-250px;
+
+left:-220px;
+
+width:700px;
+
+height:700px;
+
+background:#8B5CF6;
+
+opacity:.16;
+
+filter:blur(180px);
+
+border-radius:50%;
+
+animation:movePurple 14s linear infinite;
+
+pointer-events:none;
+
+z-index:-5;
+
+}
+
+/* ========================= */
+/* CYAN AURORA */
+/* ========================= */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+bottom:-250px;
+
+right:-220px;
+
+width:650px;
+
+height:650px;
+
+background:#06B6D4;
+
+opacity:.14;
+
+filter:blur(180px);
+
+border-radius:50%;
+
+animation:moveBlue 18s linear infinite;
+
+pointer-events:none;
+
+z-index:-5;
+
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+#root::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+rgba(255,255,255,.02) 1px,
+
+transparent 1px
+
+),
+
+linear-gradient(
+
+90deg,
+
+rgba(255,255,255,.02) 1px,
+
+transparent 1px
+
+);
+
+background-size:60px 60px;
+
+pointer-events:none;
+
+z-index:-4;
+
+}
+
+/* ========================= */
+/* STARS */
+/* ========================= */
+
+#root::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background-image:
+
+radial-gradient(circle at 15% 20%,rgba(255,255,255,.14) 1px,transparent 1px),
+
+radial-gradient(circle at 80% 15%,rgba(255,255,255,.10) 1px,transparent 1px),
+
+radial-gradient(circle at 60% 70%,rgba(255,255,255,.10) 1px,transparent 1px),
+
+radial-gradient(circle at 30% 80%,rgba(255,255,255,.10) 1px,transparent 1px),
+
+radial-gradient(circle at 90% 90%,rgba(255,255,255,.08) 1px,transparent 1px);
+
+background-size:
+
+240px 240px,
+
+220px 220px,
+
+260px 260px,
+
+180px 180px,
+
+300px 300px;
+
+pointer-events:none;
+
+z-index:-3;
+
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes movePurple{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+25%{
+
+transform:translate(80px,-60px);
+
+}
+
+50%{
+
+transform:translate(40px,80px);
+
+}
+
+75%{
+
+transform:translate(-60px,40px);
+
+}
+
+100%{
+
+transform:translate(0,0);
+
+}
+
+}
+
+@keyframes moveBlue{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+25%{
+
+transform:translate(-70px,40px);
+
+}
+
+50%{
+
+transform:translate(30px,-80px);
+
+}
+
+75%{
+
+transform:translate(80px,20px);
+
+}
+
+100%{
+
+transform:translate(0,0);
+
+}
+
+}

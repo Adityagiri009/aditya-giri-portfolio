@@ -1,0 +1,555 @@
+
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.projects{
+    position:relative;
+    padding:120px 0;
+    background:#FFFFFF;
+    overflow:hidden;
+}
+
+/* ==========================================
+   BACKGROUND BLUR
+========================================== */
+
+.projects::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    left:-180px;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#8B5CF6;
+    opacity:.08;
+    filter:blur(130px);
+}
+
+.projects::after{
+    content:"";
+    position:absolute;
+    bottom:-180px;
+    right:-180px;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#06B6D4;
+    opacity:.08;
+    filter:blur(130px);
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.projects .container{
+    position:relative;
+    z-index:2;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.projects-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.projects-title span{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:#EEF2FF;
+
+    color:#7C3AED;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.projects-title h2{
+
+    font-size:54px;
+
+    color:#111827;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.projects-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+    gap:35px;
+
+}
+
+/* ==========================================
+   PROJECT CARD
+========================================== */
+
+.project-card{
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(124,58,237,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 30px 70px rgba(124,58,237,.14);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.project-image{
+
+    height:240px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s ease;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.project-content{
+
+    padding:30px;
+
+}
+
+.project-content h3{
+
+    font-size:28px;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+.project-content p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   TECH BADGES
+========================================== */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:28px;
+
+}
+
+.project-tech span{
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:#EEF2FF;
+
+    color:#7C3AED;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-tech span:hover{
+
+    background:#7C3AED;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.project-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+.project-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.project-buttons a:first-child{
+
+    background:linear-gradient(
+    135deg,
+    #8B5CF6,
+    #06B6D4
+    );
+
+    color:#fff;
+
+}
+
+.project-buttons a:last-child{
+
+    border:2px solid #8B5CF6;
+
+    color:#8B5CF6;
+
+}
+
+.project-buttons a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   RESPONSIVE - LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+.projects-title h2{
+    font-size:46px;
+}
+
+.projects-grid{
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.projects{
+
+padding:100px 0;
+
+}
+
+.projects-title{
+
+margin-bottom:55px;
+
+}
+
+.projects-title h2{
+
+font-size:40px;
+
+}
+
+.projects-title p{
+
+font-size:16px;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+}
+
+.project-card{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.project-image{
+
+height:260px;
+
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.projects{
+
+padding:80px 0;
+
+}
+
+.projects-title h2{
+
+font-size:34px;
+
+}
+
+.projects-title p{
+
+font-size:15px;
+
+}
+
+.project-content{
+
+padding:22px;
+
+}
+
+.project-content h3{
+
+font-size:24px;
+
+}
+
+.project-content p{
+
+font-size:15px;
+
+}
+
+.project-image{
+
+height:220px;
+
+}
+
+.project-buttons{
+
+flex-direction:column;
+
+}
+
+.project-buttons a{
+
+justify-content:center;
+
+width:100%;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.projects-title h2{
+
+font-size:28px;
+
+}
+
+.projects-title span{
+
+padding:8px 18px;
+
+font-size:14px;
+
+}
+
+.project-content{
+
+padding:18px;
+
+}
+
+.project-content h3{
+
+font-size:22px;
+
+}
+
+.project-image{
+
+height:190px;
+
+}
+
+.project-tech{
+
+gap:8px;
+
+}
+
+.project-tech span{
+
+font-size:12px;
+
+padding:6px 12px;
+
+}
+
+}
+
+/* ==========================================
+   FINAL POLISH
+========================================== */
+
+.project-card,
+.project-image img{
+
+will-change:transform;
+
+backface-visibility:hidden;
+
+}
+
+.project-card{
+
+cursor:default;
+
+}
+
+.project-buttons a{
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.project-buttons a:first-child:hover{
+
+box-shadow:0 15px 35px rgba(139,92,246,.35);
+
+}
+
+.project-buttons a:last-child:hover{
+
+background:#8B5CF6;
+
+color:#fff;
+
+}
+
+.project-tech span{
+
+user-select:none;
+
+}
+
+.project-image img{
+
+display:block;
+
+}
