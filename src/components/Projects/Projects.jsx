@@ -30,7 +30,7 @@ function Projects() {
         "https://aditya-giri-portfolio.vercel.app/",
 
       github:
-        "YOUR_PORTFOLIO_GITHUB_LINK",
+        "https://github.com/Adityagiri009/aditya-giri-portfolio",
     },
 
     {
