@@ -48,7 +48,7 @@ function Projects() {
       ],
 
       live:
-        "https://gst-calculator-lime-two.vercel.app/",
+        "https://gstcalculat.netlify.app/",
 
       github:
         "https://github.com/Adityagiri009/GSTCalculator",
